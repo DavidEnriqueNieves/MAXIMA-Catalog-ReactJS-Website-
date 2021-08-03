@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  align-items: center;
 }
 
 .App-logo {
@@ -35,4 +36,183 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.box-title
+{
+  padding: auto;
+  vertical-align: middle;
+  height: 6vw;
+  width: 100%;
+  overflow-wrap: anywhere;
+  font-size: 30px;
+}
+
+.Modal
+{
+  background-color: rebeccapurple;
+
+}
+
+
+
+
+
+
+.grid {
+  vertical-align: top;
+  margin: 0rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 2rem;
+}
+.grid > div {
+  min-width: 200px;
+  background: white;
+  /* padding: 1rem; */
+  display: grid;
+  margin: none;
+  place-items: center;
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+  transition: 0.1s;
+}
+
+.grid > div > div
+{
+  vertical-align: middle;
+  border-radius: 0 0 20px  20px;
+  border-bottom: 1px solid grey;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+}
+
+.grid > div:hover {
+  /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.9); */
+  top: 20;
+}
+.grid > div:active
+{
+  transform: scale(2);
+  opacity: 10%;
+}
+
+
+
+.grid > div::before {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+  grid-area: 1/2/2/2;
+}
+.grid > div img {
+  object-fit: cover;
+  height: 15vw;
+  width: 100%;
+  /* border-radius: 20px; */
+  border-radius: 20px 20px 0 0;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  grid-area: 1/1/2/2;
+}
+
+body {
+  margin: 2rem;
+}
+
+.path
+{
+  text-align: left;
+  /* border-bottom: 1px solid grey; */
+  margin: 1.5rem;
+}
+.path *
+{
+  margin-bottom: 1.5 rem;
+  padding-right: 0.25rem;
+  padding-left: 0.25rem;
+  font : 20px solid #6B6B6B;
+  font-family : Arial, Helvetica, sans-serif;
+  display: inline-block;
+}
+
+.checkoutInfo
+{
+  display: inline-table;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.checkoutInfo div
+{
+  padding: 1rem;
+  border-radius: 20px;
+
+  outline: 1px solid grey;
+}
+
+body
+{
+  margin: 0;
+}
+.Maxima
+{
+  width: 100%;
+  margin: 0;
+  background-image: linear-gradient(
+    rgba(255, 0, 0, 0.45), 
+    rgba(255, 0, 0, 0.45)
+  ), url("https://fierros.com.co/wp-content/uploads/2020/04/shutterstock_394647790-1-1500x1125.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  min-height: 300px;
+  justify-content: center;
+  margin-bottom: 10px;
+  transition: height 4s linear;
+}
+.SearchBar
+{
+  margin-bottom: 20px;
+  min-width: 500px;
+  max-width: 30%;
+}
+
+.MaximaTitle
+{
+  color: white;
+  font-size: 100px;
+}
+
+.Maxima-Short
+{
+  
+  width: 100%;
+  padding-left: 10px;
+  margin: 0;
+  background-image: linear-gradient(
+    rgba(255, 0, 0, 0.45), 
+    rgba(255, 0, 0, 0.45)
+  ), url("https://fierros.com.co/wp-content/uploads/2020/04/shutterstock_394647790-1-1500x1125.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  height: 10%;
+  /* justify-content: center; */
+  margin-bottom: 10px;
+}
+
+
+
+.Maxima-Short .MaximaTitle
+{
+  display: inline-block;
+  align-items: right;
+  font-size: 50px;
+ 
 }

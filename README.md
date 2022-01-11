@@ -2,6 +2,9 @@
 
 The point of this project was to provide the customer with a usable interface for finding different parts in a merchandise store. The backend used consisted of MySQL, and the frontend used ReactJS with some modules such as AG Grid, and Material UI, among others. The full list of depenencies can be found in the files. 
 
+
+### [Link to Demo Video Showing Website Capabilities](https://youtu.be/WIxWr1XPusk)
+
 [![Link to Demo Video Showing the Website Capabilities](https://raw.githubusercontent.com/DavidEnriqueNieves/catalog-website-react-frontend/master/media/Thumbnail.png)](https://youtu.be/WIxWr1XPusk)
 
 As can be seen, the main features of the website allow the user to search through the entire list of distinct products either by filtering through the upper level categories such as Ferretería (Hardware), then Ebanistería (Cabinetmaking), and finally Cadena (chain). Once the user reaches the third level (the actual product type itself), the different offerings from the distributors in the system will be shown. This is done by querying the MySQL database containing the information itself.
